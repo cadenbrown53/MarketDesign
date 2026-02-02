@@ -1,0 +1,19 @@
+# macOS system files
+.DS_Store
+
+# LaTeX auxiliary files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+
+# Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+*.pyo
