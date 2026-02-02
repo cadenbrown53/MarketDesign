@@ -1,0 +1,153 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usetheme{Madrid}
+\usecolortheme{default}
+
+\title{Designing Markets}
+\subtitle{Chapter 4: Handbook of Market Design}
+\author{Summary Presentation}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}{Overview: Three Goals of Market Design}
+\begin{enumerate}
+    \item \textbf{Diagnose} potential market failures and identify their causes
+    \item \textbf{Evaluate} markets and compare alternative designs (qualitative and quantitative effects)
+    \item \textbf{Propose} new, improved designs building on lessons learned
+\end{enumerate}
+
+\vspace{0.5cm}
+\textit{Key insight:} Seemingly small details about market rules can have large impacts on market performance
+\end{frame}
+
+\begin{frame}{4.1 Diagnosing Market Failures}
+\textbf{Common types of failures documented:}
+\begin{itemize}
+    \item \textbf{Market Power:} Exercise by large participants (US Spectrum: 7-20\% higher payouts)
+    \item \textbf{Collusion:} Centralized mechanisms viewed with suspicion (medical residency lawsuit)
+    \item \textbf{Rent Seeking:} Wasteful competition for rents (HFT, ticket brokers)
+    \item \textbf{Participation/Entry:} Adding one bidder > optimal design (Bulow-Klemperer)
+    \item \textbf{Fragmentation:} Kidney exchange fragmentation reduces transplants 30\%+
+    \item \textbf{Search Costs:} Students applying to too few/many schools
+    \item \textbf{Strategic Misreporting:} Manipulable mechanisms $\rightarrow$ inefficiency
+\end{itemize}
+\end{frame}
+
+\begin{frame}{4.2 Evaluating and Comparing Designs}
+\textbf{Key Applications:}
+
+\vspace{0.3cm}
+\textbf{School Choice:}
+\begin{itemize}
+    \item NYC reform: centralization achieved 80\% of potential gains
+    \item Deferred Acceptance vs. Immediate Acceptance comparisons
+    \item Primary gains from coordination, not specific mechanism choice
+\end{itemize}
+
+\vspace{0.3cm}
+\textbf{Dynamic Assignment:}
+\begin{itemize}
+    \item Organs, public housing, hunting licenses arrive over time
+    \item First-come first-served vs. last-come first-served depends on preference structure
+    \item Use administrative data to estimate preferences and design priorities
+\end{itemize}
+\end{frame}
+
+\begin{frame}{4.2 Non-Utilitarian Objectives \& Policy Evaluation}
+\textbf{Beyond welfare maximization:}
+\begin{itemize}
+    \item Public housing: targeting neediest vs. allocative efficiency
+    \item Organ allocation: survival outcomes vs. urgency
+    \item Distributional concerns across demographics
+    \item Meritocratic admissions and long-term outcomes
+\end{itemize}
+
+\vspace{0.3cm}
+\textbf{Key Challenge:} Estimating treatment effects when choices correlate with outcomes
+
+\vspace{0.3cm}
+\textbf{Policy Evaluation:} Centralized marketplaces provide ideal data for studying broader questions in health and education economics
+\end{frame}
+
+\begin{frame}{4.3 Proposing New Designs: Medical Match}
+\textbf{National Residency Matching Program (NRMP)}
+\begin{itemize}
+    \item Matches ~25,000 medical graduates to residency positions annually
+    \item Remarkably, NRMP independently discovered Gale-Shapley algorithm in 1950s!
+    \item Before centralization: market unraveled with offers years in advance
+    \item Roth-Peranson (1999): Modified algorithm to handle married couples
+\end{itemize}
+
+\vspace{0.3cm}
+\textit{Note:} Direct welfare evidence elusive, but algorithm maintained for decades
+\end{frame}
+
+\begin{frame}{4.3 Proposing New Designs: School Choice}
+\textbf{Key contributions:}
+\begin{itemize}
+    \item Abdulkadiroğlu-Sönmez (2003): Introduced school choice as market design problem
+    \item Documented Boston mechanism's strategic manipulability
+    \item Proposed Deferred Acceptance and Top Trading Cycles as alternatives
+\end{itemize}
+
+\vspace{0.3cm}
+\textbf{Design takeaways:}
+\begin{itemize}
+    \item Equilibrium efficiency differences between well-designed mechanisms are small
+    \item Complexity of strategic behavior and fairness costs matter more
+    \item Deferred Acceptance widely adopted; Top Trading Cycles less so (priority interpretation issues)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{4.3 Proposing New Designs: Course Allocation}
+\textbf{A-CEEI Mechanism (Budish):}
+\begin{itemize}
+    \item Problem: Allocate oversubscribed courses efficiently and fairly
+    \item Draft mechanisms common but strategically manipulable
+    \item A-CEEI: Approximately ex-post efficient, approximately strategy-proof
+    \item Satisfies envy-freeness and maximin share fairness
+\end{itemize}
+
+\vspace{0.3cm}
+\textbf{Multi-paper research program:}
+\begin{enumerate}
+    \item Theory + data on HBS draft mechanism
+    \item Propose A-CEEI with computational algorithm
+    \item Laboratory experiment at Wharton
+    \item Implementation in practice
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{4.3 Proposing New Designs: Food Banks \& Financial Exchanges}
+\textbf{Feeding America Pseudomarket (Prendergast):}
+\begin{itemize}
+    \item Internal currency allocated proportionally to need
+    \item Food banks bid for donations; winners pay, losers receive currency
+    \item Results: More equitable, efficient sorting, vertical differentiation
+\end{itemize}
+
+\vspace{0.3cm}
+\textbf{Frequent Batch Auctions (Budish et al.):}
+\begin{itemize}
+    \item Replace continuous limit order books in financial markets
+    \item Eliminate speed-based arbitrage rents and arms race
+    \item Could reduce liquidity costs by 17\% (~\$5B/year in equities)
+    \item Trades on price rather than microsecond speed advantages
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Key Takeaways}
+\begin{enumerate}
+    \item \textbf{Details Matter:} Small rule changes can have large impacts
+    \item \textbf{Coordination > Optimization:} Moving from uncoordinated to sensible design matters more than optimal mechanism choice
+    \item \textbf{Multiple Objectives:} Real-world design must balance efficiency, fairness, simplicity, and participation
+    \item \textbf{Empirics Essential:} Structural models and experiments crucial for comparing mechanisms and quantifying effects
+    \item \textbf{Iterative Process:} Successful designs often require multiple papers using different methodologies
+\end{enumerate}
+\end{frame}
+
+\end{document}

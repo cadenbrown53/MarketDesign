@@ -1,0 +1,712 @@
+
+--- Page 55 ---
+53
+therefore the space of preference types is high-dimensional (Budish and Kessler, 2021). Em-
+pirical approaches will need to consider both the problem of representing and estimating such
+preferences. As discussed in Section4.3, this issue is also related to eliciting such preferences
+in practice.
+Competition
+Oneimportantreasonwhyagentsmaycareaboutmatchesotherthantheirowniscompetitive
+eﬀects, which are particularly important in settings concerning IO. For example,Uetake and
+Watanabe (2020) model an entry game in the banking industry using the tools of two-sided
+matching games in which a bank can enter a market by merging with an incumbent. In
+this entry game, payoﬀs are aﬀected by the competitor banks that match in the market.
+Similarly,Vissing (2018) models the market for oil drilling leases as a matching game between
+oil companies and landlords who hold mineral rights. In this model, the terms that an oil
+company can negotiate depend on their overall market presence. A challenge in these settings
+is lies in ﬁnding an appropriate notion of stability that allows for externalities.28
+A diﬀerent approach to the formation of partnerships has been taken in IO and the study of
+vertical relationships in particular. Like in models of matching with transferable utility, these
+models analyze the relationships between upstream and downstream ﬁrms. Externalities,
+due to competition, are typically modeled through product market competition. Examples
+include the formation of networks between health insurance providers and hospitals (Ho,
+2009), and relationships between content producers and cable-television service networks
+(Crawford and Yurukoglu,2012). Chapter [insert chapter on vertical relationships] provides
+a more thorough review of this literature.
+4 Designing Markets
+This section discusses three primary goals in market design research. The ﬁrst is to diagnose
+potential market failures and identify their causes. The second, complementary goal, is to
+evaluate markets and compare alternative designs in an eﬀort to understand the qualitative
+and quantitative eﬀects of various designs. The third goal is to propose new, improved
+designs, building on what we have learned from the ﬁrst and second goals.29 The discussion
+below is broader than the more speciﬁc focus on matching markets that was necessary to
+keep parts II and III of this chapter self-contained.
+28Conditions for the existence of stable matchings with externalities is an active area of theoretical research.
+We refer the reader to Pycia and Bumin Yenmez(2021), Fisher and Hafalir(2016), and references within for
+some recent results.
+29Naturally, this classiﬁcation is not exhaustive and several papers often have multiple objectives. Our
+hope is to organize what we see as the primary goals in market design research.
+--- Page 56 ---
+54
+4.1 Diagnosing Market Failures
+Market design researchers often emphasize that seemingly small details about market rules
+can have a large impact on the ultimate performance of a market (see, for example, surveys
+by Roth (2002) andKlemperer (2002)). Put another way, ﬂawed market rules can lead to
+market failures. In this sub-section, we give readers a brief tour of the kinds of market
+failures that have been documented. For each type of market failure, we give one or two
+leading examples, and then additional literature pointers. Some types of market failures that
+emerge in market design contexts will often be familiar to IO researchers.
+Market Power. Exercise of market power, leading to ineﬃciency, has been documented in
+a variety of market design settings in which some participants are “large,” suitably deﬁned
+for the setting.
+A recent example is the exertion of market power in the US Spectrum Incentive Auction
+(Milgrom and Segal,2017, 2020) The auction design had the feature that it was strategy-
+proof for “small” sellers — deﬁned as owners of at most a single television license per region
+— to reveal their true reservation value truthfully. However, as is commonly the case in multi-
+object auctions, sellers with multiple licenses could exert market power by withholding some
+of their supply. This is known as “supply reduction” (or, analogously, “demand reduction”)
+in the literature (Ausubel et al.,2005, 2014).
+Many broadcast television licenses were indeed owned by relatively small ﬁrms, e.g., the
+local NBC aﬃliate, making this feature that the auction was strategy-proof for small sellers
+desirable. However, after the auction was announced but prior to its taking place, some
+private equity ﬁrms aggregated broadcast television licenses from multiple sellers in a given
+region. This allowed them to then exert market power, by holding back some of the licenses
+from the auction. Doraszelski et al. (2019) estimate that payouts to station owners were
+higher by between 7-20% as a result of this exercise of market power.
+This episode illustrates the importance of considering the “larger game” in which a particular
+market design takes place (Roth,2018). It also echoes the guidance ofKlemperer (2002) that
+in auction design, traditional IO issues such as market power, collusion, and entry can be
+as important as market design per se. Milgrom (2020) emphasizes that the ineﬃciency
+and increase in costs caused by this outside-the-game move, while worse than nothing and
+arguably preventable, should be considered relative to the magnitudes of the eﬃciency gains
+from the reallocation of spectrum and the revenue realized by the federal government.
+Collusion. Centralized assignment mechanisms have sometimes been viewed with suspi-
+cion as a tool for facilitating collusion. In 2003, a group of former medical residents sued
+several medical associations and the National Residency Matching Program (NRMP) for ﬁx-
+ing residency salaries at below competitive levels (Jung et al. versus Association of American
+--- Page 57 ---
+55
+Medical Colleges et al., 2002). The NRMP uses the Roth and Peranson (1999) algorithm,
+which is a variant of the Gale-Shapley Deferred Acceptance Algorithm, to place newly minted
+medical school students at residency programs. The plaintiﬀs argued that the match serves
+as a coordination device that is used to prohibit bargaining and to keep salaries low. In a
+brief submitted on behalf of the plaintiﬀs, Orley Ashenfelter argued the work done by med-
+ical residents is similar to that of nurse practioners, suggesting that a perfectly competitive
+market would result in salaries for residents that are approximately $40,000 higher.
+A subtlety in this market, relative to other labor markets, is that hospitals set salaries
+uniformly across all of their residency positions, and do so before knowing which particular
+residents they will be matched with. Bulow and Levin(2006) analogize the restriction on
+salaries with having to oﬀer the same salary for Barry Bonds (one of the greatest baseball
+players of all time, modulo subsequent concerns about performance-enhancing drug use) as
+for Mario Mendoza (a player who somehow became famous for mediocrity). They showed
+that this feature can depress and compress salaries relative to a competitive equilibrium.30
+The suit was dismissed following an exception to antitrust law enacted by Congress in 2004,
+but left open the question of whether the design of the match is responsible for low salaries.
+Empirical studies, however, suggest that the match may not be directly responsible for low
+salaries. Niederle and Roth(2003a) show that salaries at medical fellowship markets that
+operate with and without the match are similar.Agarwal (2015) provides a rationale for
+this result, arguing that much of the salary gap arises due to market power issues that are
+unrelated to centralization. Medical residency programs have a limited number of accredited
+positions. Residents value training at these programs and are willing to take a salary cut. In
+particular, prestigious programs can reduce their salaries without substantially aﬀecting the
+quality of residents they attract. Using estimates of residents’ willingness to pay for training
+at various programs,Agarwal (2015) estimates that more than half of the salary gap can be
+explained by an implicit tuition for training at desirable programs. This gap would remain
+even in the absence of a match.
+There have also been numerous studies of collusive behavior in auction settings. To name a
+few, Friedman(1991) famously alleged collusion in the market for US treasury bonds, which
+ultimately led to a market-design change from pay-as-bid to uniform-price;Porter and Zona
+(1993) demonstrate bid rigging in highway procurement auctions; and Klemperer (2002)
+describes some famous examples in the 1990s spectrum auctions.
+Rent Seeking. Budish et al.(2015) study rent seeking in the context of high-frequency
+trading and modern ﬁnancial markets. They show that the design of modern ﬁnancial ex-
+30It is worth emphasizing that the restriction on the salaries is not due to centralization per se.Crawford
+(2008) proposes a design reform that would allow both sides of the market to submit ranks that depend on
+various salary levels. Such a design could approximate competitive outcomes, although it may be burdensome
+to implement.
+--- Page 58 ---
+56
+changes, in which time is continuous and orders are processed serially (i.e., one-at-a-time)
+creates arbitrage opportunities that are a pure contest in speed. For example, if the S&P 500
+futures contract goes up in price, this will lead to an arbitrage opportunity to buy S&P 500
+exchange traded funds. These arbitrage opportunities in turn induce a socially-wasteful rent
+seeking competition. In equilibrium, the marginal ﬁrm’s expenditure on speed leaves them
+with zero economic proﬁt, just as in a standard rent-seeking tournament.
+Leslie and Sorensen (2014) study rent seeking in the context of the market for concert tickets.
+In that market, ticket brokers often race to purchase underpriced tickets, with the intent of
+reselling in the secondary market. Leslie and Sorenson build a structural model in which
+they can quantify both the rent-seeking aspects of ticket resale and the potential for eﬃ-
+ciency gains from reallocation. Bhave and Budish(2018) study the mid-2000’s introduction
+of primary-market auctions to the event ticket market by Ticketmaster, and, by matching
+primary-market auction data to secondary-market resale values from eBay, ﬁnd that the auc-
+tions eliminated the scope for broker rents (as auctions should). Interestingly, however, the
+primary-market auctions were abandoned by Ticketmaster, who around the same time made
+a big push to enter the secondary-market — and hence get a piece of the resale rents them-
+selves (Budish,2019). Other useful references on this market, which has long captured the
+attention of economists, includeCourty (2003, 2019); Sweeting (2012); andKrueger (2019).
+Other recent studies that relate to rent seeking and market design include:Hakimov et al.
+(2019) on black markets for appointment slots, and andBudish (2018) on the rent-seeking
+tournament by bitcoin miners.
+Participation and Entry. An important requirement for successful design is that agents
+have incentives to participate in the market. Otherwise, potentially valuable transactions
+will not be realized. In fact,Bulow and Klemperer(1996) show that securing an additional
+bidder’s participation in a standard auction without a reserve price increases revenue more
+than using the optimal auction. The message is that participation is more important than
+optimal design.
+The need to encourage participation has guided design in other contexts as well. Central-
+ized matching mechanism design implicitly acknowledges this goal via emphasis on stable
+matching mechanisms. A mechanism that satisﬁes this property reduces the incentives for
+agents in the market to match outside the mechanism or to disobey proposed assignments.
+But satisfying this property is not always without costs as relaxing this requirement can
+often enable more eﬃcient matches if other aspects of agent behavior can be held ﬁxed.31
+Nonetheless, stability is considered an important property in part because empirical obser-
+vation suggests that markets that do not produce stable outcomes often collapse because
+agents start transacting outside the system (Roth,1991, 2002, 2008).
+31For example, in a school choice model,Kesten (2010) shows there are no strategy-proof mechanisms that
+are both stable and eﬃcient.
+--- Page 59 ---
+57
+Market Fragmentation. Non-participation or partial participation can have particularly
+stark consequences because a fragmented marketplace can make it hard to ﬁnd all potential
+transactions. Ashlagi and Roth (2014) and Agarwal et al. (2019) analyze this problem’s
+causes and consequences in the living donor kidney exchange market. This market enables
+transplants for patients with kidney failure who have willing but incompatible living donors.
+Kidney exchanges are facilitated by individual hospitals or one of three large multi-hospital
+platforms. Thus, it is more eﬃcient to co-ordinate exchanges via the large multi-hospital
+platforms because they can explore a greater set of potential transactions.
+Unfortunately, a design ﬂaw in the mechanism used by the platforms is partially responsible
+for the fragmented market structure. Speciﬁcally, the design gives incentives to the hospitals
+to retain some of their easiest-to-match patient-donor pairs and match them with hard-to-
+match pairs. This internal matching is instead of registering both pairs with a platform,
+causing fragmentation. The ﬂaw in the design can be remedied by instituting incentives
+via priorities for patients at hospitals that participate to a greater extent. In addition to
+this problem, fragmentation may also result from unreimbursed ﬁxed and variable costs of
+participating in a platform. Agarwal et al.(2019) estimate that proper co-ordination can
+result in more than a 30% increase in the total number of kidney exchange transplants.
+Realizing these gains would require addressing fragmentation by using either a mandate or
+both reimbursement reform and a redesign of the platform’s algorithm. Both approaches
+bring up important and subtle issues that are left for future research.
+Similar market fragmentation has also been documented and analyzed in the context of
+Chilean higher education (Kapor et al.,2020b). A centralized admissions system is used by a
+large number of prestigious colleges in Chile but a signiﬁcant portion of the higher education
+sector does not participate on the platform. Frictions in the market result in ineﬃcient
+clearing because admissions across the two paths to colleges are not well coordinated. Using
+estimates of a model that combines preferences and student achievement eﬀects, they show
+the beneﬁts of eliminating this market fragmentation.
+Investment and Innovation. Chapter [insert chapter on innovation by Williams] pro-
+vides a survey of the literature on incentives for innovation. One recent study that relates
+speciﬁcally to innovation in the context of market design isBudish et al. (2020). It uses
+theory and data to study the industrial organization of modern electronic stock exchanges,
+and uses the model to understand the incentives of exchanges to innovate on their market
+designs in ways that reduce some of the harms associated with high-frequency trading. One
+conclusion is that private innovation incentives diverge from social incentives, because ex-
+changes earn economic proﬁts in the status quo from selling inputs into the arms race for
+trading speed. Innovating to address the negative aspects of high-frequency trading would
+undermine this source of economic rent.
+As Budish et al.(2020) point out, in many of the market design implementations that are
+--- Page 60 ---
+58
+well known to the literature — spectrum auctions, the medical match, school choice, kidney
+exchange, course allocation — the entities making adoption decisions are governments or non-
+proﬁt organizations. In this context, where the key players are for-proﬁt ﬁnancial exchanges,
+private innovation incentives will play a role in whether socially optimal market designs
+are implemented. This intersection of IO, market design and innovation incentives seems a
+fruitful space for future research.
+A diﬀerent question concerns the incentives of participants in a designed marketplace to
+undertake costly investments, e.g., in increasing their values or reducing their costs. There
+is a classic result in the context of Vickrey auctions that, under some conditions, private
+investment incentives are socially eﬃcient (Rogerson, 1992). The reason is that the Vickrey
+auction implements the socially eﬃcient allocation in an incentive-compatible manner by
+giving each agent their marginal contribution to social welfare as private surplus (e.g., in a
+single-object private-values auction, the highest bidder gets as surplus the diﬀerence between
+their value and the second highest-value, which exactly aligns private and social incentives
+to increase one’s private value). A recent paper of Hatﬁeld et al. (2021) extends this idea
+to a more general mechanism design environment that includes many auction and matching
+problems as special cases.
+Search Costs.
+The baseline theoretical and empirical models assume away costs of participating in central-
+ized marketplaces. However, real-world markets are characterized by frictions that are costly
+to overcome. For example, students and their parents spend time and eﬀort learning about
+schools in their district. And, schools and employers exert eﬀort in evaluating applicants.
+These frictions can result in suboptimal outcomes that can be important to manage.He and
+Magnac (2020) argue that increases in evaluation costs associated with making it easier for
+students to submit a large number of applications may outweigh the improvements in match
+quality. One way to mitigate this externality is to levy appropriately calibrated application
+fees.
+In other cases, applicants may be applying to too few options because of costly search. This is
+especially true if evaluating and processing applications imposes negligible costs, as is the case
+in many centralized school choice systems. Using detailed data from the application process
+and a survey conducted right after applications are submitted,Arteaga et al.(2021) show
+that over-optimism about admission chances results in sub-optimally low search and too few
+school options being ranked. As a remedy to the resulting market failures, they demonstrate
+the value of matching platforms with personalized warnings for applicants whose tentative
+rank-order list leaves substantial estimated risk of non-placement.
+Strategic Misreporting. Most market designs encountered in the literature have the
+property that, if participants report their preferences truthfully, the market will produce an
+eﬃcient allocation, suitably deﬁned given the context.
+--- Page 61 ---
+59
+However, many market designs used in the world induce participants to strategically mis-
+report their preferences, sometimes signﬁcantly, and this can lead the market to produce
+allocations that are eﬃcient with respect to the reported preferences, but ineﬃcient with
+respect to the underlying truthful preferences.
+An early suggestive example in the matching literature isRoth (1991), which shows that
+medical specialties that used a matching algorithm called the priority match, as opposed to
+deferred acceptance, often abandoned their match, suggesting ineﬃciency. Also suggestive
+was early evidence on the Boston mechanism for school choice, for examplePathak and
+Sonmez (2008), which provided various forms of anecdotal evidence about some parents
+strategically misreporting their preferences while other parents participated more naively. In
+the next subsection, we discuss empirical work that has documented how agents behave when
+confronted with a manipulable school choice system. This work also quantiﬁes the eﬀects of
+this manipulation by comparing this mechanism to strategy-proof alternatives.
+Concrete quantiﬁcation of the harms from strategic preference misreporting is provided in
+Budish and Cantillon(2012). The context of that study is course allocation at Harvard Busi-
+ness School (HBS). HBS uses a mechanism colloquially known as a “snake draft”, in which
+students take turns choosing courses one at a time, with the order reversing in each round
+(thereby “snaking” up and down the list of students, see Section2.3.6). That mechanism
+provides incentive to strategically misreport, so as not to waste early round draft choices
+on courses that could be safely obtained in later rounds. The authors have both the actual
+(potentially strategic) reported preferences, as well as data on students’ underlying truthful
+preferences from an administrative survey. These data are used to directly document that
+students strategically misreport their preferences in the direction suggested by the theory,
+and to calculate the eﬀects of strategic misreporting.
+4.2 Evaluating and Comparing Designs
+In order to understand how market design may aﬀect outcomes, it is important to compare
+existing designs to each other and to alternatives. The theoretical literature has found that
+it is often hard to simultaneously satisfy all the properties a designer might like to (see
+Vulkan et al., eds,2013 and Roth, 2018). For cases where comparing two mechanisms may
+be theoretically ambiguous, it is valuable to quantify these mechanisms’ eﬀects on various
+dimensions, for example, in terms of participant welfare.
+The body of work discussed below highlights that detailed market rules interact with em-
+pirical research in three diﬀerent ways. First, formally adopted mechanisms often yield data
+that enable empirical approaches. Second, the appropriate empirical approach depends on
+the rules adopted in the market. Third, this work can shed light on the quantitative eﬀects
+of various rules and identify potential reforms.
+--- Page 62 ---
+60
+School Choice.
+Perhaps the most widely studied empirical problem is school choice design (seePathak, 2017
+and Agarwal and Somaini,2020 for more complete surveys). This emphasis is partly because
+administrative data from school districts has been more readily available, but also because
+methods for school choice settings are comparatively better developed. The methodological
+advances in this area have been enabled by a relatively straightforward link between the type
+of preference data available (rank-order lists) and single-unit discrete choice demand models.
+Moreover, a detailed understanding of student priorities and the assignment process is helpful
+in developing approaches that are well-tailored to the empirical setting.
+School choice reforms have aimed to coordinate admissions via formal matching mechanisms
+in order to increase allocative eﬃciency. But understanding the quantitative eﬀects of cen-
+tralizing admissions requires data from a system without a formal choice process, and such
+data are hard to come by.Abdulkadiroglu et al.(2017b) use the implementation of the New
+York City High School assignment system to quantify the welfare eﬀects of centralized school
+assignment. They ﬁnd that, following the reform that centralized the assignment process,
+students were more likely to enroll in their assigned school and exits from the public school
+system fell. Their analysis also compared the new DA-based system to the old system and al-
+ternatives motivated by matching theory. On a scale ranging from a no-choice neighborhood
+assignment to the utilitarian optimal, the new system realized 80% of the potential gains,
+whereas the old system achieved one-third at most. Other ordinal mechanisms studied in the
+theoretical literature were within a few percentage points, suggesting that the primary gains
+arise from coordinating assignments. Thus, centralization and coordination are of ﬁrst-order
+importance relative to the diﬀerences between well-designed alternatives.
+A related issue in designing school choice mechanisms is comparing manipulable and non-
+manipulable systems. Although the theoretical literature advocates strongly for the strategy-
+proof Deferred Acceptance mechanism, commonly used manipulable alternatives such as the
+Immediate Acceptance mechanism cannot be ruled out based on theory alone (Abdulka-
+diroglu et al., 2011). The empirical literature has shed light on the comparison between
+these two mechanisms. Student welfare has been compared using various agent behavior
+models, ranging from equilibrium play (Agarwal and Somaini,2018) and models that allow
+for mistaken reports (Calsamiglia et al.,2020; Agarwal and Somaini,2018; He, 2017; Hwang,
+2014) to models of heterogeneous beliefs estimated using survey data (Kapor et al.,2020a).
+These papers largely ﬁnd that the average student welfare is higher under IA if students’
+behavior is described by equilibrium play, but the diﬀerence is small at best (Agarwal and
+Somaini, 2018; Kapor et al.,2020a). Survey evidence also suggests that many students are
+mistaken about their admission chances or the mechanism used, which can further weigh
+against IA (He,2017; Kapor et al.,2020a). Thus, mistakes and agent behavior are important
+factors in a design’s eﬀects.
+Practical experience with implementing school choice mechanisms and the data that have
+--- Page 63 ---
+61
+been generated has also revealed new design issues that need evaluation. For example,
+districts have implemented school choice menus to manage transportation costs (Shi,2015).
+Districts have also used multi-stage clearing processes with a restricted the number of choices
+in order to simplify the process and to provide information about school competition (Ajayi
+and Sidibe,2021; Luﬂade, 2019). Understanding these designs’ eﬀects requires careful empri-
+cal work. More broadly, a mechanism and priorities should be designed keeping the objective
+function of the school district and any constraints on the allocation in mind. Indeed,Shi
+(2021) develops an approach for this objective that uses estimates of preferences as an input
+into the design problem.
+Another issue uncovered via practical experience is that students in large districts ﬁnd it
+daunting to evaluate and rank many schools (Arteaga et al., 2021). This can result in
+numerous students remaining unmatched and some appealing their initial assignments after
+learning more about their assigned school (Narita,2018). Managing such mismatch requires
+careful thinking about after-market design and the process through which students acquire
+information. Appropriately designing a mechanism with such issues in mind requires a deeper
+understanding of how the implementation of a mechanism aﬀects incentives for acquiring
+information and engaging in search (Immorlica et al.,2020).
+Dynamic Assignment Mechanisms.
+An important class of markets are ones in which agents and objects that need to be allocated
+arrive over time, rather than simultaneously as in school choice. Such markets include public
+housing (Waldinger,2021), deceased donor organs (Agarwal et al.,2021), hunting licenses
+(Verdier and Reeling,2021), and foster care (Robinson-Cortés,2019). In most of these cases,
+objects must be assigned to agents without full knowledge of which agents or objects will be
+availableforassignmentinthefutureeitherbecausewaitingiscostlyorstorageisnotpossible.
+For the designer and the empirical researcher, this adds another challenge in addition to the
+considerations in static settings discussed above.
+Recent methodological research has made some progress on these issues. A challenge with
+designing practical mechanisms is that it is rarely feasible to elicit agents’ preferences over
+all potential objects and their assignment time. This curse of dimensionality results in much
+coarser information that a mechanism can use to allocate objects. For example, on the
+organ waitlist, patients can either accept or decline an organ oﬀer. In the latter case, they
+are exercising the option of waiting for another oﬀer. Consequently, unlike school choice,
+administrative data from these systems also do not allow for a direct comparison between any
+two objects. The empirical approaches mentioned above adapt models of dynamic discrete
+choice (Pakes,1986; Rust, 1987; Hotz and Miller, 1993) and dynamic games (Bajari et al.,
+2007) in order to infer the comparison between two objects. Like school choice, these methods
+also leverage the detailed understanding of the assignment process that a formal mechanism
+aﬀords.
+Commonly studied designs often involve waitlists with agents who are oﬀered objects in a
+--- Page 64 ---
+62
+priority order as they arrive. Each agent can be assigned at most one object, and they may
+either accept or decline an oﬀer in the hope that a preferable object will be oﬀered in the
+future. A number of papers have studied how to prioritize agents on this list. For example,
+one could organize the waitlist according to a ﬁrst-come ﬁrst-served principle or a last-come
+ﬁrst-served protocol. Theoretical results suggest that the comparison between these two
+simple mechanisms is sensitive to the nature of preferences in the market. Consider that
+if preferences are largely idiosyncratic, then a ﬁrst-come ﬁrst-served protocol is preferable
+(Bloch and Cantala, 2017). This mechanism induces agents at the top of the list to be
+selective and only accept objects that are a good match for them. However, if objects are
+vertically diﬀerentiated, then a last-come ﬁrst-served system is preferable because it reduces
+selectivity and minimizes waste (Su and Zenios,2004). This conclusion is special to the model
+withverticallydiﬀerentiatedpreferencesbecausewhoisassignedtheobjectisinconsequential.
+In other cases, mechanisms other than these two polar extremes can be preferable (Leshno,
+2019).
+These ﬁndings suggest the need to understand the distribution of preferences when rec-
+ommending a design. The detailed administrative data collected during formal assignment
+processes provide a path to achieving these ends. This recent body of empirical work has
+used such data to build an empirical approach to addressing the design problem. For exam-
+ple, Agarwal et al.(2021) study the assignment of deceased donor kidneys to patients with
+kidney failure. They use data on the decisions made by agents in this market to estimate
+preferences as a function of patient-donor characteristics. The results are then used to design
+priority rules for the waitlist to maximize patient welfare. In a related study of the assign-
+ment system for public housing,Waldinger(2021) explores how leaning on choices versus on
+priorities aﬀects the trade-oﬀ between allocative and targeting eﬃciency.
+While patients waiting for a kidney and public housing applicants are typically assigned to
+only one object from the list, in certain contexts agents demand assignments of multiple
+goods over time. A theoretical literature studies how optimal mechanisms in these contexts
+signiﬁcantly diﬀer from waitlists and usually involve explicit incentives to decline an object
+(see Guo and Horner,2018, and references therein). A real-world example of such a design is
+the allocation of bear hunting licenses. Many states use a lottery system in which an agent
+who is not assigned a license during a particular season gains priority in the next season
+(Verdier and Reeling,2021).
+Alternative Approaches to Evaluating Mechanisms.
+The discussion above focuses on studies that are based on methods described in Part III
+of this chapter. These studies involve using data generated by one mechanism to project
+counterfactual outcomes in another using a structural model of preferences and behavior.
+Yet in some instances, empirical analysis is possible by either directly describing mechanism-
+generated data or using surveys. These studies often compare outcomes from two diﬀerent
+designs observed in the same market or cases when a counterfactual mechanism is straight-
+--- Page 65 ---
+63
+forward to simulate. Examples of these studies include Niederle and Roth(2003b), which
+measures mobility in the gastroenterology fellowship market that abandoned a centralized
+matching procedure between 1997 and 1999; Budish and Cantillon (2012), which studies
+a course allocation program by surveying participants to obtain truthful preference data
+and simulate counterfactuals; andPrendergast (2021), which describes how trade patterns
+changed after food banks adopted a new market design. The next subsection describes some
+of these applications in greater detail.
+Policy Evaluation using Data from Centralized Marketplaces.
+Centralized marketplaces are also an ideal laboratory for studying questions beyond the
+immediate purview of market design. They are unique repositories of detailed and adminis-
+trative data on market participants and their outcomes. Moreover, the rules governing these
+markets are well-understood.
+A small empirical literature has taken advantage of this conﬂuence of data and a grasp of
+institutional detail to address questions central to health and education economics. To name
+a few examples,Hastings et al.(2009) investigates the importance of socio-economic hetero-
+geneity in preferences in explaining inequality in enrollment at good schools;Abdulkadiroglu
+et al.(2017a) uses randomization inherent in a school choice mechanism to evaluate school
+quality in Denver; andAgarwal (2017) compares policies (ﬁnancial incentives and quantity
+regulations) for increasing the supply of medical residents in underserved rural areas. Need-
+less to say, it is important to pay careful attention to the market’s design when formulating
+an empirical strategy for policy evaluation. Just as the eﬀects of market power are interme-
+diated through the design of the market, so is the eﬀect of policy reforms such as incentives.
+Therefore, understanding how a market’s design shapes the eﬀect of a policy can enable novel
+empirical strategies.
+Evaluating Non-Utilitarian Objectives.
+Most of the aforementioned work evaluates mechanisms based on traditional (utilitarian)
+notions of agent welfare. However, the need for market designers to devise mechanisms that
+can be deployed in the real world has also motivated research that directly evaluates other
+objectives (not necessarily utilitarian) that are important to policymakers. For example,
+public housing authorities value targeting allocations to the neediest, which may be at odds
+with allocative eﬃciency (Waldinger, 2021). Similarly, organ allocation authorities value
+survival outcomes or transplanting the urgently sick (Agarwal et al.,2020). In addition,
+distributionalissuesacrossdemographicsareoftencentraltothetypesofproblemsconsidered
+(Dworczak et al.,2021). On the empirical side,Tanaka et al.(2020) studies the eﬀects of
+centralized assignment on meritocratic admissions and long-term student outcomes. An open
+area of future research is designing mechanisms that directly incorporate these considerations.
+An empirical analysis that evaluates market performance using non-utilitarian outcomes re-
+quires methods for measuring the eﬀects of changing assignments on these outcomes. For
+--- Page 66 ---
+64
+example, we need to estimate how alternative school assignments aﬀect student achievement,
+or how alternative organ waitlist designs will aﬀect patient survival. The empirical challenge
+is that agent choices may be correlated with outcomes (Roy, 1951). As is well-known, the
+resulting selection problems can bias observational estimates. Agarwal et al. (2020) combine
+a model of choices and outcomes in an assignment mechanism to estimate treatment eﬀects
+as a function of observed and unobserved agent and object heterogeneity. The approach tai-
+lors methods from a large literature on estimating treatment eﬀects using quasi-experimental
+variation (Imbens and Angrist,1994; Heckman and Vytlacil,2005; Heckman and Navarro,
+2007) to the context of an assignment mechanism. Using this approach, Agarwal et al.
+(2020) estimate that improved assignments can increase patient survival on the deceased
+donor waiting list by several years. Insights from these methods have also been used by
+Kapor et al.(2020b) to show that improving the coordination of college admissions in Chile
+lead to increased on-time graduation rates.
+4.3 Proposing New Market Designs
+A third objective of market design research, as the term suggests, is to propose new market
+designs. Often, diagnosing failures of an existing market (per Section4.1), and evaluation
+of the performance of existing market designs (per Section4.2), are key inputs into this
+step. This section brieﬂy describes some economist-proposed market designs for real-world
+settings.
+Medical Match. Each year, the National Residency Matching Program (NRMP) matches
+approximately 25,000 newly minted graduates of medical schools to training positions at
+hospitals called residencies. Both residents and residency programs are unique, diﬀering in
+quality and idiosyncratic ﬁt, much like many other labor markets or educational markets.
+But, unlike the vast majority of labor markets, the institution is centralized. Each side of
+the market – residents and programs – submits a rank-ordered preference list of agents on
+the other side to a centralized clearinghouse that uses an algorithm to determine the ﬁnal
+matches.
+Amazingly, the NRMP ﬁrst implemented the Gale-Shapley matching algorithm in the 1950s
+— well before Gale and Shapley did their research (by all accounts, Gale and Shapley were
+not aware of this usage of the algorithm in practice). This independent discovery of the
+algorithm, by practitioners as opposed to game theorists, is remarkable, and perhaps speaks
+to the algorithm’s intrinsic beauty and appeal.
+Roth and Xing(1994) report on the nature of the medical job market in the 1940s, prior
+to the adoption of a centralized matching algorithm. The market was decentralized and
+residency programs vied for the best medical students by oﬀering some positions earlier than
+--- Page 67 ---
+65
+their competitors in order to gain an edge. This process unravelled to the point that some
+students were oﬀered positions several years in advance of their graduation. Such early
+matching can be ineﬃcient for a variety of reasons. As just one example, medical students’
+preferences over the various ﬁelds of medicine may not be fully formed before students are
+able to do rotations across specialties, which is part of medical school training.32
+Roth (1984) ﬁrst reported on the connection between Gale and Shapley (1962) and the
+NRMP, and, moreover, noted some potential problems that were starting to emerge with the
+algorithm. As women were admitted to medical schools in greater numbers, starting in the
+1960s and especially the 1970s, it became more and more common for medical residents to be
+married couples, seeking a pair of positions. But, the Gale-Shapley algorithm treated each
+worker as their own individual.Roth and Peranson(1999) proposed a modiﬁcation of the
+Gale-Shapley algorithm which allowed for married couples to participate in the match in a
+way that, with high probability, would yield a stable match (seeAshlagi et al.,2014; Kojima
+et al.,2013).
+Notably, for IO readers, direct empirical evidence on the welfare gains of the match has been
+somewhat elusive. Some indirect evidence comes from the fact that the algorithm has been
+maintained in the market for so long, and that specialties that adopted diﬀerent, non-stable
+algorithms, have tended to abandon those non-stable algorithms in favor of Gale-Shapley or
+Roth-Peranson (Roth,2002). There is also indirect evidence from an interesting case study
+in gastroenterology, which, for idiosyncratic reasons, went back and forth between utilizing
+a centralized match and a decentralized market (Niederle and Roth,2003b), and from the
+context of matching college football teams to bowl games (Fréchette et al.,2007). But, there
+is no direct evidence that speaks to the overall social welfare eﬀects of the centralized match
+as researchers have not yet found a way to get enough grip on the counterfactual.
+School Choice. In an inﬂuential paper, Abdulkadiroglu and Sonmez (2003) introduced
+matching students to schools as a market design problem; documented that some school
+districts were using the “Boston mechanism” (aka Immediate Acceptance algorithm) which,
+as discussed above in Section2.3.2, is strategically manipulable; and proposed variations on
+the deferred acceptance algorithm and top-trading cycles algorithm as a theoretically superior
+alternative. Since that paper, the theoretical literature on school choice has been very active,
+and many school districts have adopted deferred acceptance (the adoption of top trading
+cycles has been more mixed, as discussed shortly). A useful survey isPathak (2011).
+Here we emphasize a few observations about this literature, and the role it is played in
+market design reform. As discused above in Section4.2, several papers have used modern
+structural IO methods to compare mechanisms. One design takeaway from these papers is
+32This would be like having to decide whether or not to be an IO economist before taking the second-year
+ﬁeld courses in IO.
+--- Page 68 ---
+66
+that theequilibrium eﬃciency diﬀerences between well-designed candidate mechanisms are
+rather small. This in turn then suggests that factors aside from equilibrium eﬃciency per se
+are likely to be central in design decisions.
+Two factors in particular seem to be central. First, thecomplexity of equilibrium behaviorin
+the Immediate Acceptance mechanism, and the associated fairness costs of strategic mistakes,
+appear to have been the decisive factor in economist recommendations to move away from
+that mechanism. Recall that survey evidence from Kapor et al.(2020a) directly documents
+the diﬃculty some families had with ﬁguring out how to play equilibrium. Yet, the Immediate
+Acceptance mechanism remains widely used across the world.
+Second, the key diﬀerence between deferred acceptance (which has been widely adopted)
+and top trading cycles (which has not been widely adopted) is theinterpretation of priority
+awarded to students based on whether they live nearby to the school (“walk zone priority”)
+or have a sibling who has attended the school (“sibling priority”). The top trading cycles
+algorithm treats such priorities as property rights that can be traded to secure a school the
+student likes better. The deferred acceptance algorithm treats schools’ rank-orderings as
+either a non-tradable property right of students, or as a preference of the school (or both,
+they are diﬀerent English descriptions of the same underlying mathematics). The fact that
+most school districts, when presented with deferred acceptance and top trading cycles as
+economist-blessed market design alternatives, have opted for deferred acceptance over top
+trading cycles, strikes us as evidence that most public school districts do not interpret such
+priorities as tradable property rights. Additionally, it may be that a subset of schools have
+preferences over which students enroll, and respecting these preferences is important to secure
+their participation in the school choice mechanism.
+A last point we emphasize, consistent with the previous, is that the evidence inAbdulka-
+diroglu et al. (2017b) suggests that it is far more important for welfare to move from an
+uncoordinated system to a sensibly-designed mechanism, than it is to move from a sensibly-
+designed mechanism to the optimal mechanism. This result echoes the argument ofKlem-
+perer (2002) in the context of spectrum auctions.
+Course Allocation. Universities often place limits on the number of students who can
+enroll in a particular class. This gives rise to a challenging allocation problem: how can
+a university ensure that students receive schedules of courses that eﬃciently reﬂect their
+preferences, in a manner that is perceived as fair, and under a procedure that is incentive
+compatible? The series of papers that led to Wharton and other universities adopting Bud-
+ish’s A-CEEI mechanism for course allocation usefully illustrates how market design reforms
+often take multiple papers using multiple diﬀerent methodological approaches, in this case
+involving theory, data, experiments, and computation (Roth,2002).
+First, Budish and Cantillon (2012) used theory and data to study the draft mechanism
+for course allocation used at Harvard Business School. Draft mechanisms are common in
+--- Page 69 ---
+67
+practice (e.g., for professional sports leagues) but their theoretical and empirical properties
+are not well understood. Budish and Cantillon (2012) obtained administrative data from
+HBS that contained both the preferences students actually reported to the draft (potentially
+strategically misreported) as well as their underlying truthful preferences, from a survey.
+This data showed that students strategically misreported their preferences, as suggested they
+wouldby theory(not wasting earlierdraft pickson coursesthat a student prefersbut knowsto
+be unpopular). By simulating student outcomes under hypothetical truthful play of the draft,
+and comparing it to student outcomes under actual strategic play of the draft, the authors
+could show that strategic misreporting harmed overall student welfare — underscoring the
+value of strategy-proofness. Yet, the comparison of the manipulable and manipulated draft
+mechanism, to the theoretical counterfactual random serial dictatorship mechanism — which
+is both strategy-proof and ex-post Pareto eﬃcient — showed the draft to be much better
+for student welfare. Budish and Cantillon(2012) thus indicated that the theory literature
+would have to ﬁnd some way to move beyond dictatorships, which in turn would involve
+some compromise away from either strategy-proofness or ex-post Pareto eﬃciency, given the
+relevant impossibility theorems.
+Next, Budish (2011) proposed the A-CEEI mechanism, based in part oﬀ of the empirical
+lessons from Budish and Cantillon.33 A-CEEI is approximately but not exactly ex-post
+Pareto eﬃcient, approximately strategy-proof, and satiﬁes criteria of outcome fairness called
+envy bounded by a single good and maximin share (now referred to as EF1 and MMS in
+the fair division literature). Using the HBS data fromBudish and Cantillon (2012), and
+a computational algorithm for A-CEEI developed byOthman et al.(2010), Budish (2011)
+shows that the A-CEEI mechanism outperforms the draft and the dictatorship on measures
+of both eﬃciency and fairness. We note that whereas in the school choice literature discussed
+above, eﬃciency diﬀerences between mechanisms are fairly small, in course allocation they
+are large. The intuition is that in multi-unit allocation there is a lot more scope for realizing
+eﬃciency gains from trade than in allocation problems in which each agent consumes just a
+single unit.
+Budish and Kessler(2021) then ran an experimental test of A-CEEI at the Wharton School
+at the University of Pennsylvania. The main goal of the experiment was to assess whether
+market participants could report their preferences to the A-CEEI mechanism “accurately
+enough” for the mechanism’s eﬃciency and fairness advantages to manifest in practice. This
+question necessitated a novel style of laboratory experiment, in which subjects participated
+based on their real preferences for real schedules in a simulated (i.e., unincentivized) environ-
+ment, as opposed to an environment in which subjects are endowed with artiﬁcial preferences.
+The evidence inBudish and Kessler(2021) suggested that students at Wharton could report
+their preferences with suﬃcient accuracy, but that preference-reporting mistakes did have a
+33This section reports on papers in the order they were ﬁrst completed, not the order in which they were
+ultimately published.
+--- Page 70 ---
+68
+measurable eﬀect on the market design’s performance in the lab.
+Last, Budish et al. (2017) report on the actual implementation of the A-CEEI mechanism at
+Wharton. This involved ﬁnalizing the preference-reporting language based on the evidence
+from Budish and Kessler (2021), improving the algorithm for discovering A-CEEI prices
+relative to the initial version in Othman et al. (2010), and various other kinds of work
+involved in bringing a market design from theoretical idea to practical implementation.
+Food Banks. Prendergast (2017;2021) reports on the implementation of a pseudomarket
+mechanism for Feeding America, the national umbrella organization responsible for food
+banks across the United States. The context for this market design research is that Feeding
+America frequently receives donations of food (e.g., a truckload of cereal) that it has to
+allocate to one of the many food banks across the United States. Previously, Feeding America
+madeallocationdecisionsusinghumanjudgment—makingphonecallstovariousfoodbanks,
+to ascertain who had an especially high need for the donation (e.g., based on other food on
+hand at that food bank at the moment, from other sources), while also keeping track of
+fairness considerations (e.g., spreading donations fairly across the country).
+Together with many colleagues, Prendergast implemented a market based on an internal
+currency to replace the prior process based on human judgments. This market allocated
+a new internal currency to food banks across the country in proportion to estimated local
+need. Then, when donations came in to Feeding America, the food banks could bid for the
+donation. The highest bidder for a given donation would then receive this donation (the food
+bank would be responsible for all transportation costs), and the artiﬁcial currency that was
+bid would then be electronically distributed to all of the other food banks, in proportion to
+their needy population. In this way, the overall level of the currency in the system stayed
+constant over time, and food banks could learn, over time, the approximate costs of certain
+kinds of donations. For a variety of fascinating reasons, proteins like chicken and shelf-stable
+foods like pasta and cereal were richly priced in the market, whereas produce and dairy,
+which perish quickly, and junk food with poor nutritional value, were very cheap.
+Prendergast (2021) documents that the pseudomarket mechanism, dubbed the Choice Sys-
+tem, lead to a more equitable allocation of food, more eﬃcient sorting of donations to nearby
+recipients (thereby economizing on transport costs), and, perhaps most surprisingly, vertical
+sorting of food banks across the country, whereby food banks with lots of other sources of
+donation (e.g., in wealthy cities) used the Choice System to get a small amount of highly-
+priced items (e.g., chicken) whereas food banks with fewer other sources of donation used the
+Choice System to get a much larger amount of food overall, in essence “trading” their shares
+of chicken for large amounts of other foods.
+Financial Exchanges. Budish et al.(2015) propose a new market design for ﬁnancial ex-
+changes, frequent batch auctions (FBA), to replace the continuous limit order book (CLOB)
+--- Page 71 ---
+69
+that is widely used for the trading of stocks, futures, and other ﬁnancial assets around the
+world. Budish et al.(2015) use both theory and data to critique the CLOB design and make
+a case for the FBA design. Empirically, they show that market correlations break down at
+ﬁne-enough time intervals (e.g., fractions of a second), leading to frequent, fairly obvious ar-
+bitrage opportunities. These arbitrage opportunities in turn induce an arms race for trading
+speed. The theory model shows that the arms race for trading speed in a sense is never
+ending, since it isrelative, not absolute, trading speed that is essential for capturing ﬂeeting
+arbitrage opportunities. More subtly, the model shows that the rents from these arbitrage
+opportunities come at the expense of market participants who are providing liquidity to the
+rest of the market (i.e., who stand willing to either buy or sell, at a spread). In equilibrium,
+liquidity providers pass on this cost to end investors. Thus, there is an equivalence in the
+model between the rents in the arms race for speed, the investments in speed, and the cost
+to end investors.
+The paper then uses theory to propose an alterntive market design, frequent batch auctions,
+that eliminates the rents from ﬂeeting arbitrages, and in so doing ends the arms race for
+trading speed and improves market liquidity. Intuitively, in a continuous market, even a one-
+microsecond speed advantage (i.e., 0.000001 seconds) is enough to win the race. Whereas in
+a batch auction market, even if the batch auctions occur as often as every tenth or even thou-
+sandth of a second, a one-microsecond speed advantage is basically meaningless. Competition
+is on price, rather than the last epsilon of trading speed.
+Aquilina et al.(2021) use a novel form of ﬁnancial market data, obtained using a speciﬁc
+regulatory authority of the UK Financial Conduct Authority (where Aquilina and O’Neill
+are based), to measure the extent of the speed-based arbitrage opportunities suggested by
+the theoretical model ofBudish et al.(2015). Speciﬁcally, the novel data is called “message
+data”, which, crucially, contains messages sent by market participants wholose, not just win,
+a race for a particular trade.Aquilina et al.(2021) show that, for stocks in the UK FTSE
+100 index (roughly analogous to the S&P 500 index in the United States), there is about
+one race per minute (537 per symbol per day), and that races constitute over 20% of all
+trading volume. In the modal race, the diﬀerence in time between the winner and the loser
+is between 0 and 15 millionths of a second (i.e., less than 0.000015 seconds). Races are for
+small amounts per race, but, because of the volumes, they add up to signiﬁcant sums. The
+authors compute that speed-based arbitrage constitutes about 33% of the literature’s main
+measure of the cost of liquidity, called price impact, that implementing FBAs would reduce
+the market’s cost of liquidity by 17%, and that speed-based arbitrages are worth about $5
+billion per year in equities markets alone.
+Budish et al.(2020) study the incentives for exchanges to innovate on their market design,
+e.g., by adopting FBAs. If FBAs reduce the cost of liquidity by 17%, not to mention make the
+market computationally simpler (avoiding much of the complexity of managing systems that
+can manage and adjudicate microsecond-level speed races), how come exchanges have not
+--- Page 72 ---
+70
+rushed to adopt? The answer,Budish et al.(2020) suggest, is a divergence between private
+and social incentives for innovation (see chapter [insert innovation chapter by Heidi Williams]
+in this volume). Speciﬁcally, incumbent exchanges earn signiﬁcant economic proﬁts from
+selling speed into the speed race — e.g., selling the right to co-locate one’s own computers
+next to the exchange’s computers — and would cut oﬀ this source of revenue if they adopted
+a market design that stopped the arms race for speed.
+Thus, market design reform in this setting may require a regulatory intervention, as opposed
+to coming about purely from private sector incentives. Notably, in many of the other mar-
+ket design reforms noted above — school choice, NRMP, course allocation, Food Banks —
+private and social incentives to adopt a new, better market design werealigned as opposed
+to divergent. A broader lesson for the market design literature, especially in its intersection
+with IO, is to pay attention not just to the ideal design of market institutions, but to the
+incentives of those with power to implement such market institutions.
+5 Conclusion
+An exciting aspect of market design research is that it involves close interaction with the real
+world. Marketplaces and the rules that govern them come in all shapes and sizes. Market
+designers seek to understand which rules matter. Given the myriad of rules, it is often unclear
+whichonesareimportant, apointthathasbeenemphasizedbefore(see Roth2002; Klemperer
+2004). This analysis requires understanding the context in which the rules operate, how they
+interact with the behavior of market participants, and what works and what does not.
+Not only does this engagement with real-world marketplaces improve our knowledge of mar-
+kets, but it also allows us to improve markets themselves. While the starting point is often
+existing market institutions, it can also begin with recognizing a gap – a problem that clearly
+needs new market institutions. Design proposals can be based on mechanisms with well-
+understood theoretical properties, designs imported from other other settings, or novel rules.
+Both past experience and theoretical analysis play an important role in this process.
+The experience acquired through the practice of market design itself creates knowledge.
+Moreover, as markets mature, new issues are often uncovered that need to be addressed,
+making the endeavour of market design an iterative process.34 Achieving this goal may
+require a researcher to step outside the traditional bounds of the academic process. But
+when the opportunity presents itself, a body of research that has ﬂeshed out practically
+relevant issues is essential to bringing the knowledge of market designers to bear on reforms.
+34Roth (2008) describes the evolution of kidney exchange markets from their inception. The challenges
+faced by the market changed with its development, and a number issues required new solutions. Even at
+a relatively advanced stage, there are new opportunities for expanding kidney exchange that require novel
+market design solutions (Roth, 2018;Ashlagi and Roth,2021).
