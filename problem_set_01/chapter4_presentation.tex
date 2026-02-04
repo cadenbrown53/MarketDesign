@@ -42,116 +42,82 @@
 \end{frame}
 
 \begin{frame}{4.2 Evaluating and Comparing Designs}
-\textbf{Key Applications:}
+\textbf{Core Challenge:} Theory often ambiguous—need empirical quantification of trade-offs
 
 \vspace{0.3cm}
-\textbf{School Choice:}
+\textbf{School Choice (NYC Reform):}
 \begin{itemize}
-    \item NYC reform: centralization achieved 80\% of potential gains
-    \item Deferred Acceptance vs. Immediate Acceptance comparisons
-    \item Primary gains from coordination, not specific mechanism choice
+    \item Centralization achieved 80\% of potential gains (old: $\leq 33\%$)
+    \item \textbf{Key insight:} Coordination matters more than specific mechanism choice
+    \item DA vs. IA: Similar welfare if equilibrium play, but mistakes favor DA
 \end{itemize}
 
 \vspace{0.3cm}
-\textbf{Dynamic Assignment:}
+\textbf{Dynamic Assignment (organs, housing, licenses):}
 \begin{itemize}
-    \item Organs, public housing, hunting licenses arrive over time
-    \item First-come first-served vs. last-come first-served depends on preference structure
-    \item Use administrative data to estimate preferences and design priorities
+    \item Challenge: Objects arrive over time, can't elicit full preferences
+    \item FCFS vs. LCFS depends on preference structure (idiosyncratic vs. vertical)
+    \item Approach: Dynamic discrete choice models + administrative data
 \end{itemize}
 \end{frame}
 
-\begin{frame}{4.2 Non-Utilitarian Objectives \& Policy Evaluation}
-\textbf{Beyond welfare maximization:}
+\begin{frame}{4.2 Methodological Approaches}
+\textbf{Beyond Structural Models:}
 \begin{itemize}
-    \item Public housing: targeting neediest vs. allocative efficiency
-    \item Organ allocation: survival outcomes vs. urgency
-    \item Distributional concerns across demographics
-    \item Meritocratic admissions and long-term outcomes
+    \item \textbf{Direct comparison:} Two designs in same market (Niederle-Roth: gastro fellowship)
+    \item \textbf{Survey-based:} Elicit truthful preferences, simulate (Budish-Cantillon)
+    \item \textbf{Descriptive:} Document post-reform changes (Prendergast: food banks)
 \end{itemize}
 
 \vspace{0.3cm}
-\textbf{Key Challenge:} Estimating treatment effects when choices correlate with outcomes
+\textbf{Non-Utilitarian Objectives:}
+\begin{itemize}
+    \item Public housing: targeting vs. efficiency; Organs: survival vs. urgency
+    \item Distributional concerns and meritocratic admissions
+    \item \textbf{Challenge:} Selection bias when choices correlate with outcomes
+    \item \textbf{Solution:} Combine choice models with treatment effect estimation
+\end{itemize}
 
 \vspace{0.3cm}
-\textbf{Policy Evaluation:} Centralized marketplaces provide ideal data for studying broader questions in health and education economics
+\textit{Note:} Centralized markets provide ideal data for policy evaluation
 \end{frame}
 
-\begin{frame}{4.3 Proposing New Designs: Medical Match}
-\textbf{National Residency Matching Program (NRMP)}
+\begin{frame}{4.3 Proposing New Designs: Medical Match \& School Choice}
+\textbf{Medical Match (NRMP):}
 \begin{itemize}
-    \item Matches ~25,000 medical graduates to residency positions annually
-    \item Remarkably, NRMP independently discovered Gale-Shapley algorithm in 1950s!
-    \item Before centralization: market unraveled with offers years in advance
-    \item Roth-Peranson (1999): Modified algorithm to handle married couples
+    \item Matches ~25,000 grads annually; discovered Gale-Shapley in 1950s
+    \item Solved market unraveling; Roth-Peranson: handled married couples
 \end{itemize}
 
 \vspace{0.3cm}
-\textit{Note:} Direct welfare evidence elusive, but algorithm maintained for decades
-\end{frame}
-
-\begin{frame}{4.3 Proposing New Designs: School Choice}
-\textbf{Key contributions:}
+\textbf{School Choice (Abdulkadiroğlu-Sönmez 2003):}
 \begin{itemize}
-    \item Abdulkadiroğlu-Sönmez (2003): Introduced school choice as market design problem
-    \item Documented Boston mechanism's strategic manipulability
-    \item Proposed Deferred Acceptance and Top Trading Cycles as alternatives
-\end{itemize}
-
-\vspace{0.3cm}
-\textbf{Design takeaways:}
-\begin{itemize}
-    \item Equilibrium efficiency differences between well-designed mechanisms are small
-    \item Complexity of strategic behavior and fairness costs matter more
-    \item Deferred Acceptance widely adopted; Top Trading Cycles less so (priority interpretation issues)
+    \item Documented Boston mechanism's manipulability
+    \item Proposed DA and TTC as alternatives
+    \item DA widely adopted; efficiency differences small but complexity/fairness matter
 \end{itemize}
 \end{frame}
 
-\begin{frame}{4.3 Proposing New Designs: Course Allocation}
-\textbf{A-CEEI Mechanism (Budish):}
+\begin{frame}{4.3 Proposing New Designs: Course Allocation \& Other Markets}
+\textbf{A-CEEI (Budish):}
 \begin{itemize}
-    \item Problem: Allocate oversubscribed courses efficiently and fairly
-    \item Draft mechanisms common but strategically manipulable
-    \item A-CEEI: Approximately ex-post efficient, approximately strategy-proof
-    \item Satisfies envy-freeness and maximin share fairness
+    \item Allocate oversubscribed courses efficiently and fairly
+    \item Approximately efficient, strategy-proof; satisfies envy-freeness
+    \item Multi-paper program: theory, computation, experiments, implementation
 \end{itemize}
 
 \vspace{0.3cm}
-\textbf{Multi-paper research program:}
-\begin{enumerate}
-    \item Theory + data on HBS draft mechanism
-    \item Propose A-CEEI with computational algorithm
-    \item Laboratory experiment at Wharton
-    \item Implementation in practice
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{4.3 Proposing New Designs: Food Banks \& Financial Exchanges}
-\textbf{Feeding America Pseudomarket (Prendergast):}
+\textbf{Food Banks (Prendergast):}
 \begin{itemize}
-    \item Internal currency allocated proportionally to need
-    \item Food banks bid for donations; winners pay, losers receive currency
-    \item Results: More equitable, efficient sorting, vertical differentiation
+    \item Pseudomarket with internal currency → equitable, efficient sorting
 \end{itemize}
 
 \vspace{0.3cm}
-\textbf{Frequent Batch Auctions (Budish et al.):}
+\textbf{Financial Exchanges (Budish et al.):}
 \begin{itemize}
-    \item Replace continuous limit order books in financial markets
-    \item Eliminate speed-based arbitrage rents and arms race
-    \item Could reduce liquidity costs by 17\% (~\$5B/year in equities)
-    \item Trades on price rather than microsecond speed advantages
+    \item Frequent batch auctions eliminate speed arbitrage
+    \item Could reduce costs 17\% (~\$5B/year); trade on price not speed
 \end{itemize}
-\end{frame}
-
-\begin{frame}{Key Takeaways}
-\begin{enumerate}
-    \item \textbf{Details Matter:} Small rule changes can have large impacts
-    \item \textbf{Coordination > Optimization:} Moving from uncoordinated to sensible design matters more than optimal mechanism choice
-    \item \textbf{Multiple Objectives:} Real-world design must balance efficiency, fairness, simplicity, and participation
-    \item \textbf{Empirics Essential:} Structural models and experiments crucial for comparing mechanisms and quantifying effects
-    \item \textbf{Iterative Process:} Successful designs often require multiple papers using different methodologies
-\end{enumerate}
 \end{frame}
 
 \end{document}
